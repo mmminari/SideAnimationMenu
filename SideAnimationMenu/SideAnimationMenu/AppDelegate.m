@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LeftMenuViewController.h"
+#import "LGSideMenuController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +18,23 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    ViewController *viewController = [ViewController new];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    LGSideMenuController *sideMenuController = [[LGSideMenuController alloc] initWithRootViewController:navigationController];
+    
+    [sideMenuController setLeftViewEnabledWithWidth:250.0
+                                  presentationStyle:LGSideMenuPresentationStyleScaleFromBig
+                               alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
+    
+    LeftMenuViewController *leftViewController = [LeftMenuViewController new];
+    
+    [sideMenuController.leftView addSubview:leftViewController.view];
+    
     return YES;
 }
 
