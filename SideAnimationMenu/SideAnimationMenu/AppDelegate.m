@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BaseViewController.h"
 #import "LeftMenuViewController.h"
 #import "LGSideMenuController.h"
+#import "LibraryClass.h"
 
 @interface AppDelegate ()
 
@@ -21,19 +22,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    ViewController *viewController = [ViewController new];
+    BaseViewController *viewController = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:viewController];
     
-    LGSideMenuController *sideMenuController = [[LGSideMenuController alloc] initWithRootViewController:navigationController];
     
-    [sideMenuController setLeftViewEnabledWithWidth:250.0
-                                  presentationStyle:LGSideMenuPresentationStyleScaleFromBig
-                               alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
+    [sideMenu setLeftViewEnabledWithWidth:250.0
+                             presentationStyle:LGSideMenuPresentationStyleSlideBelow
+                          alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
     
-    LeftMenuViewController *leftViewController = [LeftMenuViewController new];
+    LeftMenuViewController *leftViewController = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
     
-    [sideMenuController.leftView addSubview:leftViewController.view];
+    [sideMenu.leftView addSubview:leftViewController.view];
+    
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    
+    leftViewController.view.frame = CGRectMake(0, 0, screenWidth, screenHeight);
+    
+    [self.window setRootViewController:sideMenu];
+    
+    [[LibraryClass sharedInstance] setSideMenu:sideMenu];
+    
     
     return YES;
 }

@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "LeftMenuViewController.h"
-#import "LGSideMenuController.h"
+#import <LGSideMenuController/LGSideMenuController.h>
+#import "BaseViewController.h"
 
 @interface ViewController () <UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lbSearch;
@@ -25,21 +26,6 @@
     
     self.searchBar.delegate = self;
     
-    ViewController *viewController = [ViewController new];
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    
-    self.sideMenu = [[LGSideMenuController alloc] initWithRootViewController:navigationController];
-    
-    [self.sideMenu setLeftViewEnabledWithWidth:250.0
-                                  presentationStyle:LGSideMenuPresentationStyleScaleFromBig
-                               alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
-    
-    LeftMenuViewController *leftViewController = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
-    
-    [self.sideMenu.leftView addSubview:leftViewController.view];
-    
-
 }
 
 #pragma mark - User Action
