@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LGSideMenuController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) LGSideMenuController *sideMenu;
+
 
 
 @end

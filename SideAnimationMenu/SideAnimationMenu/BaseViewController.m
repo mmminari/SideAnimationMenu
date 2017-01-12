@@ -10,7 +10,10 @@
 #import "LGSideMenuController.h"
 #import "LibraryClass.h"
 
-@interface BaseViewController ()
+@interface BaseViewController () <UISearchBarDelegate>
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) LibraryClass *lib;
+@property (weak, nonatomic) IBOutlet UILabel *lbSearchText;
 
 @end
 
@@ -20,17 +23,38 @@
 {
     [super viewDidLoad];
     
-
+    self.lib = [LibraryClass sharedInstance];
+    
+    self.searchBar.delegate = self;
+    
 }
 
 #pragma mark - User Action
 
 - (IBAction)touchedShowButton:(UIButton *)sender
 {
+    [appDelegate.sideMenu showLeftViewAnimated:YES completionHandler:nil];
     
-    [[LibraryClass sharedInstance].sideMenu showLeftViewAnimated:YES completionHandler:nil];
+    self.lbSearchText.text = self.searchBar.text;
 
 }
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+    NSLog(@"searchBarTextDidEndEditing");
+    
+    self.lbSearchText.text = searchBar.text;
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+    
+    
+}
+
 
 
 

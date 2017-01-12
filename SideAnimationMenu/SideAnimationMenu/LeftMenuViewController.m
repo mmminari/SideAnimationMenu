@@ -8,7 +8,7 @@
 
 #import "LeftMenuViewController.h"
 
-@interface LeftMenuViewController ()
+@interface LeftMenuViewController () 
 
 @end
 

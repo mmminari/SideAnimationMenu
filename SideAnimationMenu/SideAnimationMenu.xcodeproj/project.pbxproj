@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					6D528AAB1E00D10B00974450 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 266V4D93VQ;
 						ProvisioningStyle = Automatic;
 					};
 					6D528AC41E00D10B00974450 = {
@@ -507,7 +508,9 @@
 			baseConfigurationReference = 84150753B3A0EE53EA187125 /* Pods-SideAnimationMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 266V4D93VQ;
 				INFOPLIST_FILE = SideAnimationMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SideAnimationMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,7 +522,9 @@
 			baseConfigurationReference = EB50241F6120344C511A58B6 /* Pods-SideAnimationMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 266V4D93VQ;
 				INFOPLIST_FILE = SideAnimationMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SideAnimationMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";

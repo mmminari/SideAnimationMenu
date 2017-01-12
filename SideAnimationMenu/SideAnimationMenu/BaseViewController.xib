@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
             <connections>
+                <outlet property="lbSearchText" destination="8ra-kG-nP8" id="jEL-0O-hbL"/>
+                <outlet property="searchBar" destination="TqJ-6G-JKW" id="tNm-kr-01n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,16 +21,37 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50G-aU-fVl">
-                    <rect key="frame" x="59" y="307" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-6G-JKW">
+                    <rect key="frame" x="10" y="90" width="355" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eHm-jJ-mA7"/>
+                    </connections>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ra-kG-nP8">
+                    <rect key="frame" x="187.5" y="194" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-H4-Vbd">
+                    <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="touchedShowButton:" destination="-1" eventType="touchUpInside" id="LMr-4R-7RD"/>
+                        <action selector="touchedShowButton:" destination="-1" eventType="touchUpInside" id="A29-hp-lyl"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TqJ-6G-JKW" secondAttribute="trailing" constant="10" id="19L-H2-fN1"/>
+                <constraint firstItem="8ra-kG-nP8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GYj-wE-h7e"/>
+                <constraint firstItem="8ra-kG-nP8" firstAttribute="top" secondItem="TqJ-6G-JKW" secondAttribute="bottom" constant="60" id="MdD-aC-pg0"/>
+                <constraint firstItem="Aol-H4-Vbd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hwH-Eh-WhN"/>
+                <constraint firstItem="Aol-H4-Vbd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pPB-SZ-WDT"/>
+                <constraint firstItem="TqJ-6G-JKW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="q9e-ce-mGJ"/>
+                <constraint firstItem="TqJ-6G-JKW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="zjn-U4-jgE"/>
+            </constraints>
         </view>
     </objects>
 </document>

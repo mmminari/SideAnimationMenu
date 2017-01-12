@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "LGSideMenuController.h"
+#import "AppDelegate.h"
+
+
+#define appDelegate     ((AppDelegate *) [UIApplication sharedApplication].delegate)
 
 
 @interface LibraryClass : NSObject
 
 + (instancetype)sharedInstance;
-@property (strong, nonatomic) LGSideMenuController *sideMenu;
-
 
 @end
