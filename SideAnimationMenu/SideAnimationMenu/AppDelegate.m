@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BaseViewController.h"
 #import "LeftMenuViewController.h"
+#import "LGSideMenuController.h"
 #import "LibraryClass.h"
 
 @interface AppDelegate ()
@@ -24,23 +25,23 @@
     
     BaseViewController *viewController = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
     
-    self.sideMenu = [[LGSideMenuController alloc]initWithRootViewController:viewController];
+    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:viewController];
     
     
-    [self.sideMenu setLeftViewEnabledWithWidth:250.0
+    [sideMenu setLeftViewEnabledWithWidth:250.0
                              presentationStyle:LGSideMenuPresentationStyleSlideBelow
                           alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
     
     LeftMenuViewController *leftViewController = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
     
-    [self.sideMenu.leftView addSubview:leftViewController.view];
+    [sideMenu.leftView addSubview:leftViewController.view];
     
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     
     leftViewController.view.frame = CGRectMake(0, 0, screenWidth, screenHeight);
     
-    [self.window setRootViewController:self.sideMenu];;
+    [self.window setRootViewController:sideMenu];;
     
     
     return YES;

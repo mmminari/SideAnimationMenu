@@ -7,12 +7,10 @@
 //
 
 #import "BaseViewController.h"
-#import "LGSideMenuController.h"
-#import "LibraryClass.h"
 
 @interface BaseViewController () <UISearchBarDelegate>
+
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) LibraryClass *lib;
 @property (weak, nonatomic) IBOutlet UILabel *lbSearchText;
 
 @end
@@ -22,8 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.lib = [LibraryClass sharedInstance];
     
     self.searchBar.delegate = self;
     
@@ -37,15 +33,7 @@
     
     self.lbSearchText.text = self.searchBar.text;
     
-    UIApplication *application = [UIApplication sharedApplication];
-    
-    UIWindow *window = [application keyWindow];
-    
-    LGSideMenuController *sideMenu = (LGSideMenuController *)window.rootViewController;
-    
-    [sideMenu showLeftViewAnimated:YES completionHandler:nil];
-    
-    
+    [self openSideMenuWithCompletion:nil];
 
 
 }
