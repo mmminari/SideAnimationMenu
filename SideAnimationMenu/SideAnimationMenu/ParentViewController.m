@@ -12,6 +12,8 @@
 
 @interface ParentViewController ()
 
+@property (strong, nonatomic) LGSideMenuController *sideMenu;
+
 @end
 
 @implementation ParentViewController
@@ -21,22 +23,28 @@
     [super viewDidLoad];
     
     self.lib = [LibraryClass sharedInstance];
-
-
-}
-
-- (void)openSideMenuWithCompletion:(void(^)(void))completion
-{
+    
     UIApplication *application = [UIApplication sharedApplication];
     
     UIWindow *window = [application keyWindow];
     
-    LGSideMenuController *sideMenu = (LGSideMenuController *)window.rootViewController;
-    
-    [sideMenu showLeftViewAnimated:YES completionHandler:^{
+    self.sideMenu = (LGSideMenuController *)window.rootViewController;
+
+}
+
+- (void)openSideMenuWithCompletion:(void(^)(void))completion
+{    
+    [self.sideMenu showLeftViewAnimated:YES completionHandler:^{
         if(completion)
             completion();
     }];
+}
+
+- (void)printSideMenuStatus
+{
+    NSLog(@"printSideMenuStatus : %zd", self.sideMenu.isLeftViewShowing);
+    
+    NSLog(@"sideMenu : %@", self.sideMenu);
 }
 
 

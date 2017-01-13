@@ -11,6 +11,7 @@
 #import "LeftMenuViewController.h"
 #import "LGSideMenuController.h"
 #import "LibraryClass.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +24,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    BaseViewController *viewController = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
+    //BaseViewController *viewController = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
+    ViewController *vc = (ViewController *)self.window.rootViewController;
     
-    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:viewController];
-    
+    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:vc];
     
     [sideMenu setLeftViewEnabledWithWidth:250.0
                              presentationStyle:LGSideMenuPresentationStyleSlideBelow

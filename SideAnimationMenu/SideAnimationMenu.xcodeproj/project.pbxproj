@@ -18,6 +18,7 @@
 		6D528AD81E00D1BD00974450 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D528AD61E00D1BD00974450 /* LeftMenuViewController.xib */; };
 		6D78FE8F1E120BD100F255A6 /* LibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FE8E1E120BD100F255A6 /* LibraryClass.m */; };
 		6D790DBF1E28705C00D88890 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D790DBE1E28705C00D88890 /* ParentViewController.m */; };
+		6D790DC21E28D39400D88890 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D790DC11E28D39400D88890 /* SecondViewController.m */; };
 		6D97C0D41E110A4E00628B3F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97C0D21E110A4E00628B3F /* BaseViewController.m */; };
 		6D97C0D51E110A4E00628B3F /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D97C0D31E110A4E00628B3F /* BaseViewController.xib */; };
 		789E30BB010CCF3F4FE98FA0 /* libPods-SideAnimationMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C238A7FE680F53B0C8C53FD7 /* libPods-SideAnimationMenu.a */; };
@@ -56,6 +57,8 @@
 		6D78FE8E1E120BD100F255A6 /* LibraryClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryClass.m; sourceTree = "<group>"; };
 		6D790DBD1E28705C00D88890 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
 		6D790DBE1E28705C00D88890 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		6D790DC01E28D39400D88890 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6D790DC11E28D39400D88890 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		6D97C0D11E110A4E00628B3F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		6D97C0D21E110A4E00628B3F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		6D97C0D31E110A4E00628B3F /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				6D78FE8E1E120BD100F255A6 /* LibraryClass.m */,
 				6D790DBD1E28705C00D88890 /* ParentViewController.h */,
 				6D790DBE1E28705C00D88890 /* ParentViewController.m */,
+				6D790DC01E28D39400D88890 /* SecondViewController.h */,
+				6D790DC11E28D39400D88890 /* SecondViewController.m */,
 			);
 			path = SideAnimationMenu;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 				6D97C0D41E110A4E00628B3F /* BaseViewController.m in Sources */,
 				6D790DBF1E28705C00D88890 /* ParentViewController.m in Sources */,
 				6D78FE8F1E120BD100F255A6 /* LibraryClass.m in Sources */,
+				6D790DC21E28D39400D88890 /* SecondViewController.m in Sources */,
 				6D528AB41E00D10B00974450 /* AppDelegate.m in Sources */,
 				6D528AD71E00D1BD00974450 /* LeftMenuViewController.m in Sources */,
 				6D528AB11E00D10B00974450 /* main.m in Sources */,
