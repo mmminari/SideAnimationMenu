@@ -33,9 +33,20 @@
 
 - (IBAction)touchedShowButton:(UIButton *)sender
 {
-    [appDelegate.sideMenu showLeftViewAnimated:YES completionHandler:nil];
+    //[appDelegate.sideMenu showLeftViewAnimated:YES completionHandler:nil];
     
     self.lbSearchText.text = self.searchBar.text;
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    
+    UIWindow *window = [application keyWindow];
+    
+    LGSideMenuController *sideMenu = (LGSideMenuController *)window.rootViewController;
+    
+    [sideMenu showLeftViewAnimated:YES completionHandler:nil];
+    
+    
+
 
 }
 

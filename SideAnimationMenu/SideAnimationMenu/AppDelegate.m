@@ -40,7 +40,7 @@
     
     leftViewController.view.frame = CGRectMake(0, 0, screenWidth, screenHeight);
     
-    [self.window setRootViewController:self.sideMenu];
+    [self.window setRootViewController:self.sideMenu];;
     
     
     return YES;
