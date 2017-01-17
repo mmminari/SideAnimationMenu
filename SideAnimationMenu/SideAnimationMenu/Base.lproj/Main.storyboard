@@ -25,6 +25,36 @@
             </objects>
             <point key="canvasLocation" x="-1129" y="90"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="cwW-nm-Yqf">
+            <objects>
+                <viewController storyboardIdentifier="stid-MenuVC" id="E6J-3t-SjY" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K1E-PT-um1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryR-sH-44T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zly-2V-ikY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="^*^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYe-Ag-rl7">
+                                <rect key="frame" x="125.5" y="323" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99008969907407407" green="0.74901960779999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PYe-Ag-rl7" firstAttribute="centerX" secondItem="Zly-2V-ikY" secondAttribute="centerX" constant="-50" id="5Xn-q1-hzG"/>
+                            <constraint firstItem="PYe-Ag-rl7" firstAttribute="centerY" secondItem="Zly-2V-ikY" secondAttribute="centerY" id="xQN-if-RSY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3V-Fr-4AR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-603"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>

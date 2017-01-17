@@ -16,6 +16,7 @@
 		6D528ACA1E00D10B00974450 /* SideAnimationMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D528AC91E00D10B00974450 /* SideAnimationMenuTests.m */; };
 		6D528AD71E00D1BD00974450 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D528AD51E00D1BD00974450 /* LeftMenuViewController.m */; };
 		6D528AD81E00D1BD00974450 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D528AD61E00D1BD00974450 /* LeftMenuViewController.xib */; };
+		6D53D3431E2DFA1000E8DF6E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D53D3421E2DFA1000E8DF6E /* MenuViewController.m */; };
 		6D78FE8F1E120BD100F255A6 /* LibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D78FE8E1E120BD100F255A6 /* LibraryClass.m */; };
 		6D790DBF1E28705C00D88890 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D790DBE1E28705C00D88890 /* ParentViewController.m */; };
 		6D790DC21E28D39400D88890 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D790DC11E28D39400D88890 /* SecondViewController.m */; };
@@ -53,6 +54,8 @@
 		6D528AD41E00D1BD00974450 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		6D528AD51E00D1BD00974450 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		6D528AD61E00D1BD00974450 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
+		6D53D3411E2DFA1000E8DF6E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		6D53D3421E2DFA1000E8DF6E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		6D78FE8D1E120BD100F255A6 /* LibraryClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryClass.h; sourceTree = "<group>"; };
 		6D78FE8E1E120BD100F255A6 /* LibraryClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryClass.m; sourceTree = "<group>"; };
 		6D790DBD1E28705C00D88890 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				6D528AB31E00D10B00974450 /* AppDelegate.m */,
 				6D528AB51E00D10B00974450 /* ViewController.h */,
 				6D528AB61E00D10B00974450 /* ViewController.m */,
+				6D53D3411E2DFA1000E8DF6E /* MenuViewController.h */,
+				6D53D3421E2DFA1000E8DF6E /* MenuViewController.m */,
 				6D528ABB1E00D10B00974450 /* Assets.xcassets */,
 				6D528AB81E00D10B00974450 /* Main.storyboard */,
 				6D528ABD1E00D10B00974450 /* LaunchScreen.storyboard */,
@@ -379,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D528AB71E00D10B00974450 /* ViewController.m in Sources */,
+				6D53D3431E2DFA1000E8DF6E /* MenuViewController.m in Sources */,
 				6D97C0D41E110A4E00628B3F /* BaseViewController.m in Sources */,
 				6D790DBF1E28705C00D88890 /* ParentViewController.m in Sources */,
 				6D78FE8F1E120BD100F255A6 /* LibraryClass.m in Sources */,

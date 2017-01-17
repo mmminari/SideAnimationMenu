@@ -10,6 +10,7 @@
 #import "LeftMenuViewController.h"
 #import "BaseViewController.h"
 #import "SecondViewController.h"
+#import "MenuViewController.h"
 
 @interface ViewController () <UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lbSearch;
@@ -80,18 +81,20 @@
 
 - (void)setUp
 {
-    LeftMenuViewController *leftVC = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
+    //LeftMenuViewController *leftVC = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
+    
+    MenuViewController *menuVC = [self.storyboard instantiateViewControllerWithIdentifier:@"stid-MenuVC"];
     
     BaseViewController *baseVC = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
     
     baseVC.sideMenu = self;
     
     self.rootViewController = baseVC;
-    self.leftViewController = leftVC;
+    self.leftViewController = menuVC;
     self.leftViewWidth = 250.0f;
     self.leftViewBackgroundColor = [UIColor colorWithRed:0.5 green:0.6 blue:0.5 alpha:0.9];
 
-    self.leftViewPresentationStyle = LGSideMenuPresentationStyleSlideAbove;
+    self.leftViewPresentationStyle = LGSideMenuPresentationStyleSlideBelow;
 }
 
 
