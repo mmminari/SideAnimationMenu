@@ -13,8 +13,8 @@
 
 @property (strong, nonatomic) LibraryClass *lib;
 
-- (void)printSideMenuStatus;
-- (void)openSideMenuWithCompletion:(void(^)(void))completion;
+//- (void)printSideMenuStatus;
+//- (void)openSideMenuWithCompletion:(void(^)(void))completion;
 
 
 @end
