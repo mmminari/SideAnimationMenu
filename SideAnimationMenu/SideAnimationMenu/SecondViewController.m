@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    [self printSideMenuStatus];
+    //[self printSideMenuStatus];
 
 }
 

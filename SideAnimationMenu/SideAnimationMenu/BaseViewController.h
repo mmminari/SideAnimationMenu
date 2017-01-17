@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ParentViewController.h"
+#import "LGSideMenuController.h"
 
 @interface BaseViewController : ParentViewController
+
+@property (strong, nonatomic) LGSideMenuController *sideMenu;
 
 @end

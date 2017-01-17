@@ -25,24 +25,24 @@
 {
     
     //BaseViewController *viewController = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
-    ViewController *vc = (ViewController *)self.window.rootViewController;
-    
-    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:vc];
-    
-    [sideMenu setLeftViewEnabledWithWidth:250.0
-                             presentationStyle:LGSideMenuPresentationStyleSlideBelow
-                          alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
-    
-    LeftMenuViewController *leftViewController = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
-    
-    [sideMenu.leftView addSubview:leftViewController.view];
-    
-    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    
-    leftViewController.view.frame = CGRectMake(0, 0, screenWidth, screenHeight);
-    
-    [self.window setRootViewController:sideMenu];;
+//    ViewController *vc = (ViewController *)self.window.rootViewController;
+//    
+//    LGSideMenuController *sideMenu = [[LGSideMenuController alloc]initWithRootViewController:vc];
+//    
+//    [sideMenu setLeftViewEnabledWithWidth:250.0
+//                             presentationStyle:LGSideMenuPresentationStyleSlideBelow
+//                          alwaysVisibleOptions:LGSideMenuAlwaysVisibleOnNone];
+//    
+//    LeftMenuViewController *leftViewController = [[LeftMenuViewController alloc]initWithNibName:@"LeftMenuViewController" bundle:nil];
+//    
+//    [sideMenu.leftView addSubview:leftViewController.view];
+//    
+//    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+//    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+//    
+//    leftViewController.view.frame = CGRectMake(0, 0, screenWidth, screenHeight);
+//    
+//    [self.window setRootViewController:sideMenu];;
     
     
     return YES;

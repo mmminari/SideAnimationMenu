@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53742CFB3EA687D8C0BC5168A6A0A6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		55E7CF3B15332741A81F38A022CFCC46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		5DA723352CFC1B716EEB570B1B80EFB3 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E33E9F1A924944C1D22F4FF0682A0DC /* LGSideMenuController-dummy.m */; };
-		7F080D388CD05D07247F25E4202FEBB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B27102B21622F17DF020FED9BD073C /* LGSideMenuController.m */; };
+		68C252008769C34BD53B7EABD61BDDD4 /* LGSideMenuControllerGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D442E4C7ECE255008A1E15634A22C2BF /* LGSideMenuControllerGesturesHandler.m */; };
 		89BFA7E54902D07C2BB851287DEDADC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		991235E4157CB92803802572D3B736B5 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FAE4E7CBE502021BA975D932A1131 /* LGSideMenuController.m */; };
+		ABCF2BE59E8852A7A146E4D87E8AEC75 /* LGSideMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9476E4FBE8CFECF2B9C73A86F44CBE /* LGSideMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF0CCF1C84D8CE547EB35B77C66FE069 /* Pods-SideAnimationMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE68DC47DE0F616D57D6D4BFA80771F /* Pods-SideAnimationMenu-dummy.m */; };
-		BB88D35B819AF6C79B46D74440CFC155 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 93917CA5B283BDC8DE328C6D1B36CD55 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFB03E9C42E9C2340601B3C1D76B3993 /* Pods-SideAnimationMenuTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3486BA1E784C9ED1AB5AC7A96D54BF /* Pods-SideAnimationMenuTests-dummy.m */; };
+		DD48AC9B5A3BB20A45094EBCEF106A89 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F4FBE3DDAA596D7FC2E49F89594D3A /* UIViewController+LGSideMenuController.m */; };
+		DEDF2EC0C2AA0C3CC7DE3555C95134C3 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = B274C6DC796A4D57E1863F754393665B /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12510AD98DCD2EDD9164AE7AC59D2A2 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 663F3221822288C9DD1B2D3067325858 /* LGSideMenuController-dummy.m */; };
+		EDC30B9DA5C69762C34D6604878CA674 /* LGSideMenuControllerGesturesHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 602F9E312A89471E6C7ED0F8F08A3E81 /* LGSideMenuControllerGesturesHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7BB466FCA44C59178DB4A45A96CC80F /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E535C824020BD1AADBA425E4D510F2 /* LGSideMenuView.m */; };
+		F96B9D0E4C1C26BB119EA4A0C2125716 /* UIViewController+LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = BDED25CD1991D5CF2221E502762D67C8 /* UIViewController+LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADF3D4FA9B718A9D34A51753EF03B5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +28,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1022135014AC3B84F17A4F91E01916A;
+			remoteGlobalIDString = 26B5980F2302FEA9EBF8276CE51B16DC;
 			remoteInfo = LGSideMenuController;
 		};
 /* End PBXContainerItemProxy section */
@@ -31,43 +37,49 @@
 		0F3AE95DEC43A269808284CED4182FE6 /* Pods-SideAnimationMenu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SideAnimationMenu-frameworks.sh"; sourceTree = "<group>"; };
 		116F360D7DCD9BD2A2E54095457A4B83 /* Pods-SideAnimationMenuTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SideAnimationMenuTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		170D4CBAAFEE0BC409A35787C799CB77 /* Pods-SideAnimationMenu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SideAnimationMenu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1E33E9F1A924944C1D22F4FF0682A0DC /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
 		2756F298EAF8260F9080644038F3EF06 /* Pods-SideAnimationMenuTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SideAnimationMenuTests-frameworks.sh"; sourceTree = "<group>"; };
 		27CE139148BB4E5D13D2AA3E5D724147 /* libPods-SideAnimationMenuTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SideAnimationMenuTests.a"; path = "libPods-SideAnimationMenuTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3486BA1E784C9ED1AB5AC7A96D54BF /* Pods-SideAnimationMenuTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SideAnimationMenuTests-dummy.m"; sourceTree = "<group>"; };
-		3EBD0CB6CED92209DEB0D8132B04260F /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		3E9476E4FBE8CFECF2B9C73A86F44CBE /* LGSideMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuView.h; path = LGSideMenuController/LGSideMenuView.h; sourceTree = "<group>"; };
+		42E535C824020BD1AADBA425E4D510F2 /* LGSideMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuView.m; path = LGSideMenuController/LGSideMenuView.m; sourceTree = "<group>"; };
 		45632374BA9185FA08C761A1E342B0E2 /* Pods-SideAnimationMenu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SideAnimationMenu-acknowledgements.plist"; sourceTree = "<group>"; };
-		4613EF030F0B3AAE05B33B6B365BF52C /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
-		47B27102B21622F17DF020FED9BD073C /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
 		4AC24078A6595146255CB25A381D2089 /* libLGSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLGSideMenuController.a; path = libLGSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2015AB93FEA9928F10C71321E82CD0 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
+		602F9E312A89471E6C7ED0F8F08A3E81 /* LGSideMenuControllerGesturesHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuControllerGesturesHandler.h; path = LGSideMenuController/LGSideMenuControllerGesturesHandler.h; sourceTree = "<group>"; };
+		663F3221822288C9DD1B2D3067325858 /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
+		687FAE4E7CBE502021BA975D932A1131 /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
 		6AE68DC47DE0F616D57D6D4BFA80771F /* Pods-SideAnimationMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SideAnimationMenu-dummy.m"; sourceTree = "<group>"; };
 		70B02D83669D4D96325D12622D758B17 /* Pods-SideAnimationMenu-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SideAnimationMenu-resources.sh"; sourceTree = "<group>"; };
 		7B06E7CC81E1E537926D91EA85A16D6A /* Pods-SideAnimationMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SideAnimationMenu.release.xcconfig"; sourceTree = "<group>"; };
 		7BD5DDC94CAC9A481834607F64FB862C /* Pods-SideAnimationMenuTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SideAnimationMenuTests-resources.sh"; sourceTree = "<group>"; };
-		93917CA5B283BDC8DE328C6D1B36CD55 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9714880DD360E9798DABA1B41C4C4B02 /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
 		A59AED1064DA82BC5EB25583FE4D0D61 /* Pods-SideAnimationMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SideAnimationMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B058A0F01C780796620599D72D9E3376 /* libPods-SideAnimationMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SideAnimationMenu.a"; path = "libPods-SideAnimationMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B274C6DC796A4D57E1863F754393665B /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
+		BDED25CD1991D5CF2221E502762D67C8 /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LGSideMenuController.h"; path = "LGSideMenuController/UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
 		C27FBAED791BE6C51441386FF314F922 /* Pods-SideAnimationMenuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SideAnimationMenuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D442E4C7ECE255008A1E15634A22C2BF /* LGSideMenuControllerGesturesHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuControllerGesturesHandler.m; path = LGSideMenuController/LGSideMenuControllerGesturesHandler.m; sourceTree = "<group>"; };
 		D8AA9A629E2C8B5A0D6D8654153CD2D2 /* Pods-SideAnimationMenuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SideAnimationMenuTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8F4FBE3DDAA596D7FC2E49F89594D3A /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LGSideMenuController.m"; path = "LGSideMenuController/UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
 		EFB225E9038251F35FA8F807AFF0802B /* Pods-SideAnimationMenuTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SideAnimationMenuTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F84EE126AF8DDBFC554E2CAB5C0075E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53742CFB3EA687D8C0BC5168A6A0A6F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3443C3B6036439B93ADDC6EA6863E4E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55E7CF3B15332741A81F38A022CFCC46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13A548FE1A0E59E2B4E5CA96A376DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADF3D4FA9B718A9D34A51753EF03B5D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +128,17 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		3E712F2D96B5F67151E24B669C60EFC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9714880DD360E9798DABA1B41C4C4B02 /* LGSideMenuController.xcconfig */,
+				663F3221822288C9DD1B2D3067325858 /* LGSideMenuController-dummy.m */,
+				4C2015AB93FEA9928F10C71321E82CD0 /* LGSideMenuController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LGSideMenuController";
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +152,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				92383656760703498B788E0A80A59E97 /* Pods */,
+				A3FF4108A479A19E40BFB3E138751113 /* Pods */,
 				282AABCA6CA8C67063DC4E5D41ACA704 /* Products */,
 				29B41560FC067E9ECC373B6609CEDDA0 /* Targets Support Files */,
 			);
@@ -150,10 +173,10 @@
 			path = "Target Support Files/Pods-SideAnimationMenu";
 			sourceTree = "<group>";
 		};
-		92383656760703498B788E0A80A59E97 /* Pods */ = {
+		A3FF4108A479A19E40BFB3E138751113 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F5953F69EB598817980ACA696B58D5BA /* LGSideMenuController */,
+				EEAB73F1E135227A91C16C351BECFD65 /* LGSideMenuController */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,23 +189,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F0FBB8CD03FA483DEB5328CC2F45A048 /* Support Files */ = {
+		EEAB73F1E135227A91C16C351BECFD65 /* LGSideMenuController */ = {
 			isa = PBXGroup;
 			children = (
-				3EBD0CB6CED92209DEB0D8132B04260F /* LGSideMenuController.xcconfig */,
-				1E33E9F1A924944C1D22F4FF0682A0DC /* LGSideMenuController-dummy.m */,
-				4613EF030F0B3AAE05B33B6B365BF52C /* LGSideMenuController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LGSideMenuController";
-			sourceTree = "<group>";
-		};
-		F5953F69EB598817980ACA696B58D5BA /* LGSideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				93917CA5B283BDC8DE328C6D1B36CD55 /* LGSideMenuController.h */,
-				47B27102B21622F17DF020FED9BD073C /* LGSideMenuController.m */,
-				F0FBB8CD03FA483DEB5328CC2F45A048 /* Support Files */,
+				B274C6DC796A4D57E1863F754393665B /* LGSideMenuController.h */,
+				687FAE4E7CBE502021BA975D932A1131 /* LGSideMenuController.m */,
+				602F9E312A89471E6C7ED0F8F08A3E81 /* LGSideMenuControllerGesturesHandler.h */,
+				D442E4C7ECE255008A1E15634A22C2BF /* LGSideMenuControllerGesturesHandler.m */,
+				3E9476E4FBE8CFECF2B9C73A86F44CBE /* LGSideMenuView.h */,
+				42E535C824020BD1AADBA425E4D510F2 /* LGSideMenuView.m */,
+				BDED25CD1991D5CF2221E502762D67C8 /* UIViewController+LGSideMenuController.h */,
+				E8F4FBE3DDAA596D7FC2E49F89594D3A /* UIViewController+LGSideMenuController.m */,
+				3E712F2D96B5F67151E24B669C60EFC7 /* Support Files */,
 			);
 			name = LGSideMenuController;
 			path = LGSideMenuController;
@@ -191,17 +209,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E9EC1CE65F081D9C3E2FF0CDC3D0A75F /* Headers */ = {
+		709D62D587CE3C0968CAF63D6B2FF47C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB88D35B819AF6C79B46D74440CFC155 /* LGSideMenuController.h in Headers */,
+				DEDF2EC0C2AA0C3CC7DE3555C95134C3 /* LGSideMenuController.h in Headers */,
+				EDC30B9DA5C69762C34D6604878CA674 /* LGSideMenuControllerGesturesHandler.h in Headers */,
+				ABCF2BE59E8852A7A146E4D87E8AEC75 /* LGSideMenuView.h in Headers */,
+				F96B9D0E4C1C26BB119EA4A0C2125716 /* UIViewController+LGSideMenuController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		26B5980F2302FEA9EBF8276CE51B16DC /* LGSideMenuController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B6425F4F4D05C5A76A60873B1578BF /* Build configuration list for PBXNativeTarget "LGSideMenuController" */;
+			buildPhases = (
+				FC6E7A7127FC3700F558E3085A1EC6E6 /* Sources */,
+				D13A548FE1A0E59E2B4E5CA96A376DE7 /* Frameworks */,
+				709D62D587CE3C0968CAF63D6B2FF47C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGSideMenuController;
+			productName = LGSideMenuController;
+			productReference = 4AC24078A6595146255CB25A381D2089 /* libLGSideMenuController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9141E6D9C2A5246A79D5ECE0A6AEA12B /* Pods-SideAnimationMenuTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5453E1572866BA54AA78089133D665B /* Build configuration list for PBXNativeTarget "Pods-SideAnimationMenuTests" */;
@@ -235,23 +273,6 @@
 			productReference = B058A0F01C780796620599D72D9E3376 /* libPods-SideAnimationMenu.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 20027A76F9206B526AEFBE75CF515042 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */;
-			buildPhases = (
-				87590EEDDD3CB842594D1AEB0E7BBC04 /* Sources */,
-				2F84EE126AF8DDBFC554E2CAB5C0075E /* Frameworks */,
-				E9EC1CE65F081D9C3E2FF0CDC3D0A75F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LGSideMenuController;
-			productName = LGSideMenuController;
-			productReference = 4AC24078A6595146255CB25A381D2089 /* libLGSideMenuController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,7 +294,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */,
+				26B5980F2302FEA9EBF8276CE51B16DC /* LGSideMenuController */,
 				9E51D4022F6AA557C9B440A05CEC326B /* Pods-SideAnimationMenu */,
 				9141E6D9C2A5246A79D5ECE0A6AEA12B /* Pods-SideAnimationMenuTests */,
 			);
@@ -289,20 +310,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87590EEDDD3CB842594D1AEB0E7BBC04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DA723352CFC1B716EEB570B1B80EFB3 /* LGSideMenuController-dummy.m in Sources */,
-				7F080D388CD05D07247F25E4202FEBB4 /* LGSideMenuController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C33B02CD61CC271B4E7ABF5FDABBE55D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFB03E9C42E9C2340601B3C1D76B3993 /* Pods-SideAnimationMenuTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC6E7A7127FC3700F558E3085A1EC6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12510AD98DCD2EDD9164AE7AC59D2A2 /* LGSideMenuController-dummy.m in Sources */,
+				991235E4157CB92803802572D3B736B5 /* LGSideMenuController.m in Sources */,
+				68C252008769C34BD53B7EABD61BDDD4 /* LGSideMenuControllerGesturesHandler.m in Sources */,
+				F7BB466FCA44C59178DB4A45A96CC80F /* LGSideMenuView.m in Sources */,
+				DD48AC9B5A3BB20A45094EBCEF106A89 /* UIViewController+LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,105 +336,13 @@
 		E76001F7E37620D9884B1B8F7FE740A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LGSideMenuController;
-			target = F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */;
+			target = 26B5980F2302FEA9EBF8276CE51B16DC /* LGSideMenuController */;
 			targetProxy = C8DC56CFEF9D2ABF4D08184606994C46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01A595F0FC1C28EB2F412C342428ABDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EBD0CB6CED92209DEB0D8132B04260F /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		0366F1508ED0561DC681E44AC2489F07 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B06E7CC81E1E537926D91EA85A16D6A /* Pods-SideAnimationMenu.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		4E100B06BEF1214DE35CFF4C071A08D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C27FBAED791BE6C51441386FF314F922 /* Pods-SideAnimationMenuTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7CE27011CDF32D8605831CD661A1A93B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EBD0CB6CED92209DEB0D8132B04260F /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -454,32 +386,9 @@
 			};
 			name = Debug;
 		};
-		D1DDC5A94EEC3E489C1ECB64EB756484 /* Release */ = {
+		221F980CF3B046EDD60E747E68DD49AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8AA9A629E2C8B5A0D6D8654153CD2D2 /* Pods-SideAnimationMenuTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D6DB26A91F86C4BF395FDF4DBCA6DEE4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A59AED1064DA82BC5EB25583FE4D0D61 /* Pods-SideAnimationMenu.debug.xcconfig */;
+			baseConfigurationReference = 9714880DD360E9798DABA1B41C4C4B02 /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -487,20 +396,20 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -532,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -540,23 +449,129 @@
 			};
 			name = Release;
 		};
+		937695CEC6E1B442F350D09BA886B302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27FBAED791BE6C51441386FF314F922 /* Pods-SideAnimationMenuTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9BA5FB76DCCA77CC631CD19EA9B2A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9714880DD360E9798DABA1B41C4C4B02 /* LGSideMenuController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCB160CC599CE85C119037F73D74C600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B06E7CC81E1E537926D91EA85A16D6A /* Pods-SideAnimationMenu.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C767730D472B709272EEB20800327643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8AA9A629E2C8B5A0D6D8654153CD2D2 /* Pods-SideAnimationMenuTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ED1BFE2359136818F31C63BE9225DCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59AED1064DA82BC5EB25583FE4D0D61 /* Pods-SideAnimationMenu.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20027A76F9206B526AEFBE75CF515042 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CE27011CDF32D8605831CD661A1A93B /* Debug */,
-				01A595F0FC1C28EB2F412C342428ABDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
-				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -564,8 +579,17 @@
 		46F86DFC853BF65D9307A54199A9CF1B /* Build configuration list for PBXNativeTarget "Pods-SideAnimationMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6DB26A91F86C4BF395FDF4DBCA6DEE4 /* Debug */,
-				0366F1508ED0561DC681E44AC2489F07 /* Release */,
+				ED1BFE2359136818F31C63BE9225DCA4 /* Debug */,
+				BCB160CC599CE85C119037F73D74C600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B6425F4F4D05C5A76A60873B1578BF /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221F980CF3B046EDD60E747E68DD49AF /* Debug */,
+				A9BA5FB76DCCA77CC631CD19EA9B2A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -573,8 +597,8 @@
 		B5453E1572866BA54AA78089133D665B /* Build configuration list for PBXNativeTarget "Pods-SideAnimationMenuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E100B06BEF1214DE35CFF4C071A08D8 /* Debug */,
-				D1DDC5A94EEC3E489C1ECB64EB756484 /* Release */,
+				937695CEC6E1B442F350D09BA886B302 /* Debug */,
+				C767730D472B709272EEB20800327643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

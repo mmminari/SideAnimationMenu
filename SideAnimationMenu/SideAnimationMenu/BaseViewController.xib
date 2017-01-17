@@ -29,13 +29,13 @@
                     </connections>
                 </searchBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ra-kG-nP8">
-                    <rect key="frame" x="187.5" y="194" width="0.0" height="0.0"/>
+                    <rect key="frame" x="188" y="194" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-H4-Vbd">
-                    <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                    <rect key="frame" x="165" y="319" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="touchedShowButton:" destination="-1" eventType="touchUpInside" id="A29-hp-lyl"/>

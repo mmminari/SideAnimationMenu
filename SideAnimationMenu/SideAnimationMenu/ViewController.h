@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LGSideMenuController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : LGSideMenuController
 
 
 @end

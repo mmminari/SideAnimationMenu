@@ -29,11 +29,11 @@
 
 - (IBAction)touchedShowButton:(UIButton *)sender
 {
-    //[appDelegate.sideMenu showLeftViewAnimated:YES completionHandler:nil];
+    [self.sideMenu showLeftViewAnimated:YES completionHandler:nil];
     
     self.lbSearchText.text = self.searchBar.text;
     
-    [self openSideMenuWithCompletion:nil];
+    //[self openSideMenuWithCompletion:nil];
 
 
 }

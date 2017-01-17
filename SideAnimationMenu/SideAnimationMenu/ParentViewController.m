@@ -21,31 +21,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.lib = [LibraryClass sharedInstance];
-    
-    UIApplication *application = [UIApplication sharedApplication];
-    
-    UIWindow *window = [application keyWindow];
-    
-    self.sideMenu = (LGSideMenuController *)window.rootViewController;
+//    
+//    self.lib = [LibraryClass sharedInstance];
+//    
+//    UIApplication *application = [UIApplication sharedApplication];
+//    
+//    UIWindow *window = [application keyWindow];
+//    
+//    self.sideMenu = (LGSideMenuController *)window.rootViewController;
 
 }
 
-- (void)openSideMenuWithCompletion:(void(^)(void))completion
-{    
-    [self.sideMenu showLeftViewAnimated:YES completionHandler:^{
-        if(completion)
-            completion();
-    }];
-}
-
-- (void)printSideMenuStatus
-{
-    NSLog(@"printSideMenuStatus : %zd", self.sideMenu.isLeftViewShowing);
-    
-    NSLog(@"sideMenu : %@", self.sideMenu);
-}
+//- (void)openSideMenuWithCompletion:(void(^)(void))completion
+//{    
+//    [self.sideMenu showLeftViewAnimated:YES completionHandler:^{
+//        if(completion)
+//            completion();
+//    }];
+//}
+//
+//- (void)printSideMenuStatus
+//{
+//    NSLog(@"printSideMenuStatus : %zd", self.sideMenu.isLeftViewShowing);
+//    
+//    NSLog(@"sideMenu : %@", self.sideMenu);
+//}
 
 
 
